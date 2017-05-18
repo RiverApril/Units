@@ -7,7 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E18B6B731E0DF26A00C4D4EA /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E18B6B721E0DF26A00C4D4EA /* main.cpp */; };
+		E18B6B7D1E0DF31300C4D4EA /* SDL2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E18B6B7C1E0DF31300C4D4EA /* SDL2.framework */; };
+		E18B6B801E0DFD2700C4D4EA /* Entity.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E18B6B7E1E0DFD2700C4D4EA /* Entity.cpp */; };
+		E18B6B831E0DFD7D00C4D4EA /* Unit.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E18B6B811E0DFD7D00C4D4EA /* Unit.cpp */; };
+		E18B6B861E0DFDEE00C4D4EA /* Navigator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E18B6B841E0DFDEE00C4D4EA /* Navigator.cpp */; };
+		E18B6B891E0DFEE200C4D4EA /* SDLHelper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E18B6B871E0DFEE200C4D4EA /* SDLHelper.cpp */; };
+		E18B6B8A1E0E043F00C4D4EA /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E18B6B791E0DF2CC00C4D4EA /* main.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,7 +29,16 @@
 
 /* Begin PBXFileReference section */
 		E18B6B6F1E0DF26A00C4D4EA /* Units */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Units; sourceTree = BUILT_PRODUCTS_DIR; };
-		E18B6B721E0DF26A00C4D4EA /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		E18B6B791E0DF2CC00C4D4EA /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		E18B6B7C1E0DF31300C4D4EA /* SDL2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2.framework; path = ../../../../Library/Frameworks/SDL2.framework; sourceTree = "<group>"; };
+		E18B6B7E1E0DFD2700C4D4EA /* Entity.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Entity.cpp; sourceTree = "<group>"; };
+		E18B6B7F1E0DFD2700C4D4EA /* Entity.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Entity.hpp; sourceTree = "<group>"; };
+		E18B6B811E0DFD7D00C4D4EA /* Unit.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Unit.cpp; sourceTree = "<group>"; };
+		E18B6B821E0DFD7D00C4D4EA /* Unit.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Unit.hpp; sourceTree = "<group>"; };
+		E18B6B841E0DFDEE00C4D4EA /* Navigator.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Navigator.cpp; sourceTree = "<group>"; };
+		E18B6B851E0DFDEE00C4D4EA /* Navigator.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Navigator.hpp; sourceTree = "<group>"; };
+		E18B6B871E0DFEE200C4D4EA /* SDLHelper.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SDLHelper.cpp; sourceTree = "<group>"; };
+		E18B6B881E0DFEE200C4D4EA /* SDLHelper.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = SDLHelper.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E18B6B7D1E0DF31300C4D4EA /* SDL2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -41,8 +56,17 @@
 		E18B6B661E0DF26A00C4D4EA = {
 			isa = PBXGroup;
 			children = (
-				E18B6B711E0DF26A00C4D4EA /* Units */,
+				E18B6B871E0DFEE200C4D4EA /* SDLHelper.cpp */,
+				E18B6B881E0DFEE200C4D4EA /* SDLHelper.hpp */,
+				E18B6B841E0DFDEE00C4D4EA /* Navigator.cpp */,
+				E18B6B851E0DFDEE00C4D4EA /* Navigator.hpp */,
+				E18B6B811E0DFD7D00C4D4EA /* Unit.cpp */,
+				E18B6B821E0DFD7D00C4D4EA /* Unit.hpp */,
+				E18B6B7E1E0DFD2700C4D4EA /* Entity.cpp */,
+				E18B6B7F1E0DFD2700C4D4EA /* Entity.hpp */,
+				E18B6B791E0DF2CC00C4D4EA /* main.cpp */,
 				E18B6B701E0DF26A00C4D4EA /* Products */,
+				E18B6B7B1E0DF31300C4D4EA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,12 +78,12 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		E18B6B711E0DF26A00C4D4EA /* Units */ = {
+		E18B6B7B1E0DF31300C4D4EA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				E18B6B721E0DF26A00C4D4EA /* main.cpp */,
+				E18B6B7C1E0DF31300C4D4EA /* SDL2.framework */,
 			);
-			path = Units;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -119,7 +143,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E18B6B731E0DF26A00C4D4EA /* main.cpp in Sources */,
+				E18B6B8A1E0E043F00C4D4EA /* main.cpp in Sources */,
+				E18B6B831E0DFD7D00C4D4EA /* Unit.cpp in Sources */,
+				E18B6B861E0DFDEE00C4D4EA /* Navigator.cpp in Sources */,
+				E18B6B801E0DFD2700C4D4EA /* Entity.cpp in Sources */,
+				E18B6B891E0DFEE200C4D4EA /* SDLHelper.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,6 +244,10 @@
 		E18B6B771E0DF26A00C4D4EA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -223,6 +255,10 @@
 		E18B6B781E0DF26A00C4D4EA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
